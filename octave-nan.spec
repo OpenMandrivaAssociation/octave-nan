@@ -1,6 +1,6 @@
 %define	pkgname nan
 %define name	octave-%{pkgname}
-%define version 2.3.1
+%define version 2.4.4
 %define release %mkrel 1
 
 Summary:	NaN toolbox for Octave
