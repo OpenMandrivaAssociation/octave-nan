@@ -10,6 +10,7 @@ Group:		Sciences/Mathematics
 Url:		https://octave.sourceforge.io/%{octpkg}/
 
 BuildRequires:	octave-devel >= 4.4.1
+BuildRequires:	gomp-devel
 
 Requires:	octave(api) = %{octave_api}
 
