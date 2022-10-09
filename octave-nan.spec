@@ -2,7 +2,7 @@
 
 Summary:	NaN toolbox for Octave
 Name:		octave-%{octpkg}
-Version:	3.6.1
+Version:	3.7.0
 Release:	1
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
