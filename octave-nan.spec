@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel >= 4.4.1
 BuildRequires:	gomp-devel
@@ -19,8 +19,6 @@ Requires(postun): octave
 
 %description
 A statistics and machine learning toolbox for data with and w/o missing values.
-
-This package is part of external Octave-Forge collection.
 
 %files
 %license COPYING
