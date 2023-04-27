@@ -1,16 +1,16 @@
-%define octpkg nan
+%global octpkg nan
 
-Summary:	NaN toolbox for Octave
-Name:		octave-%{octpkg}
+Summary:	A statistics and machine learning toolbox for data with and w/o missing values
+Name:		octave-nan
 Version:	3.7.0
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+Url:		https://packages.octave.org/nan/
+Source0:	https://downloads.sourceforge.net/octave/nan-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.4.1
-BuildRequires:	gomp-devel
+BuildRequires:  octave-devel >= 4.4.1
+#BuildRequires:	gomp-devel
 
 Requires:	octave(api) = %{octave_api}
 
@@ -18,23 +18,22 @@ Requires(post): octave
 Requires(postun): octave
 
 %description
-A statistics and machine learning toolbox for data with and w/o missing values.
+A statistics and machine learning toolbox for data with and w/o
+missing values.
 
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
+#{_metainfodir}/*.metainfo.xml
 
 #---------------------------------------------------------------------------
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %set_build_flags
