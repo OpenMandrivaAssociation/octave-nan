@@ -10,7 +10,7 @@ Url:		https://packages.octave.org/nan/
 Source0:	https://downloads.sourceforge.net/octave/nan-%{version}.tar.gz
 
 BuildRequires:  octave-devel >= 4.4.1
-#BuildRequires:	gomp-devel
+BuildRequires:	gomp-devel
 
 Requires:	octave(api) = %{octave_api}
 
