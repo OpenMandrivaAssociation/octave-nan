@@ -3,7 +3,7 @@
 Summary:	A statistics and machine learning toolbox for data with and w/o missing values
 Name:		octave-nan
 Version:	3.7.0
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/nan/
